@@ -5,9 +5,43 @@
   </Configs>
   <NewExtensions/>
   <sounds name="sound"/>
-  <sprites name="sprites"/>
+  <sprites name="sprites">
+    <sprite>sprites\spr_playerWall</sprite>
+    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_wall</sprite>
+    <sprite>sprites\spr_pamphlet</sprite>
+    <sprite>sprites\spr_person</sprite>
+    <sprite>sprites\spr_vamp</sprite>
+  </sprites>
   <backgrounds name="background"/>
-  <paths name="paths"/>
+  <paths name="paths">
+    <path>paths\path_person_1</path>
+  </paths>
+  <scripts name="scripts">
+    <script>scripts\scr_initialize.gml</script>
+  </scripts>
+  <objects name="objects">
+    <objects name="Gameplay">
+      <object>objects\obj_init</object>
+      <object>objects\obj_hud</object>
+    </objects>
+    <objects name="Environment">
+      <object>objects\obj_wall</object>
+    </objects>
+    <objects name="Main">
+      <object>objects\obj_player</object>
+      <object>objects\obj_pamphletbullet</object>
+      <object>objects\obj_pamphletpickup</object>
+      <object>objects\obj_person</object>
+    </objects>
+    <objects name="Vampire">
+      <object>objects\obj_vamp</object>
+    </objects>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\init</room>
+    <room>rooms\testroom</room>
+  </rooms>
   <help>
     <rtf>help.rtf</rtf>
   </help>
