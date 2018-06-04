@@ -17,3 +17,5 @@ global.currentPamphletCount = global.defaultPamphletCount;
 //Score and level properties
 global.levelGoal = 0;
 global.nextLevel = level1;
+
+global.healthDecrementSpeed = 30;

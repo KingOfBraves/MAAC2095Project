@@ -27,6 +27,8 @@
             <kind>1</kind>
             <string>///image speed
 image_speed = .15;
+
+global.charfacing = 1;
 </string>
           </argument>
         </arguments>
@@ -58,24 +60,28 @@ if (keyboard_check(vk_right)){
         global.hdir = 1;
     }
     //image_angle = 0;
+    global.charfacing = 0;
 }
 else if (keyboard_check(vk_left)){
     if (!place_meeting(x - global.charcollision, y, obj_wall)){
             global.hdir -= 1;
     }
     //image_angle = 180;
+    global.charfacing = 180;
 }
 if (keyboard_check(vk_down)){
     if (!place_meeting(x, y + global.charcollision, obj_wall)){
         global.vdir = 1;
     }
     //image_angle = 270;
+    global.charfacing = 270;
 }
 else if (keyboard_check(vk_up)){
     if (!place_meeting(x, y - global.charcollision, obj_wall)){
         global.vdir -= 1;
     }
     //image_angle = 90;
+    global.charfacing = 90;
 }
 
 x += (global.hdir) * global.charspeed;
@@ -109,7 +115,7 @@ y += (global.vdir) * global.charspeed;
 if (global.currentPamphletCount &gt; 0) {
     bullet = instance_create(x,y,obj_seed);
     bullet.speed = 10;
-    bullet.direction = image_angle;
+    bullet.direction = global.charfacing;
     global.currentPamphletCount--;
 }
 
