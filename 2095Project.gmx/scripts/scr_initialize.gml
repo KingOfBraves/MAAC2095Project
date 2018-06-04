@@ -13,3 +13,7 @@ global.pamphletMinSpeed = 1;
 global.defaultPamphletCount = 10;
 global.currentPamphletCount = global.defaultPamphletCount;
 
+
+//Score and level properties
+global.levelGoal = 0;
+global.nextLevel = level1;

@@ -4,7 +4,11 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\snd_enemyhit</sound>
+    <sound>sound\snd_pickup</sound>
+    <sound>sound\snd_throw</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\spr_playerWall</sprite>
     <sprite>sprites\spr_player</sprite>
@@ -12,8 +16,17 @@
     <sprite>sprites\spr_pamphlet</sprite>
     <sprite>sprites\spr_person</sprite>
     <sprite>sprites\spr_vamp</sprite>
+    <sprite>sprites\spr_tree</sprite>
+    <sprite>sprites\spr_world</sprite>
+    <sprite>sprites\sprite9</sprite>
+    <sprite>sprites\spr_people</sprite>
+    <sprite>sprites\spr_bf_down</sprite>
+    <sprite>sprites\spr_bd_up</sprite>
+    <sprite>sprites\spr_healthtree</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bkg_forest_tiles</background>
+  </backgrounds>
   <paths name="paths">
     <path>paths\path_person_1</path>
   </paths>
@@ -24,6 +37,7 @@
     <objects name="Gameplay">
       <object>objects\obj_init</object>
       <object>objects\obj_hud</object>
+      <object>objects\obj__controller</object>
     </objects>
     <objects name="Environment">
       <object>objects\obj_wall</object>
@@ -31,15 +45,20 @@
     <objects name="Main">
       <object>objects\obj_player</object>
       <object>objects\obj_pamphletbullet</object>
+      <object>objects\obj_seed</object>
       <object>objects\obj_pamphletpickup</object>
-      <object>objects\obj_person</object>
+      <object>objects\obj_tree</object>
+      <object>objects\obj_healthtree</object>
     </objects>
-    <objects name="Vampire">
+    <objects name="Enemies">
+      <object>objects\obj_person</object>
       <object>objects\obj_vamp</object>
     </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\init</room>
+    <room>rooms\level1</room>
+    <room>rooms\level2</room>
     <room>rooms\testroom</room>
   </rooms>
   <help>
